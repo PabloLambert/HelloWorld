@@ -1,0 +1,72 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "56aed10a-03dd-47bb-8237-740dc1627eea": {
+        "id": "56aed10a-03dd-47bb-8237-740dc1627eea",
+        "parent": null,
+        "name": "HelloWorld",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "3411a75a-6e0d-4f8c-8bbc-6160cb56ae48"
+        ],
+        "isRemovable": false,
+        "filePath": "HelloWorld"
+      },
+      "3411a75a-6e0d-4f8c-8bbc-6160cb56ae48": {
+        "id": "3411a75a-6e0d-4f8c-8bbc-6160cb56ae48",
+        "parent": "56aed10a-03dd-47bb-8237-740dc1627eea",
+        "name": "lambda.js",
+        "type": "LAMBDA_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "HelloWorld/lambda.js",
+        "code": "exports.handler = function(event, context, callback) {\n    \n    console.log(\"upss\");\n    callback(null, {\"message\": \"Successfully executed\"});\n}",
+        "triggers": [],
+        "config": {
+          "runtime": "nodejs8.10",
+          "timeout": 60,
+          "memory": 128
+        }
+      }
+    },
+    "deletedFiles": [],
+    "rootNode": "56aed10a-03dd-47bb-8237-740dc1627eea",
+    "openFiles": [
+      "3411a75a-6e0d-4f8c-8bbc-6160cb56ae48"
+    ],
+    "currentFileId": "3411a75a-6e0d-4f8c-8bbc-6160cb56ae48",
+    "resources": {},
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {}
+    },
+    "lambdaId": "3411a75a-6e0d-4f8c-8bbc-6160cb56ae48"
+  },
+  "PROJECT_META": {
+    "projectName": "HelloWorld",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east-1",
+    "platform": "AWS",
+    "platformRegions": {},
+    "lastSave": 1551114808504
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "HelloWorld",
+      "url": "https://github.com/PabloLambert/HelloWorld"
+    }
+  }
+}
