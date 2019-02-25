@@ -28,6 +28,14 @@
           "runtime": "nodejs8.10",
           "timeout": 60,
           "memory": 128
+        },
+        "testCases": {
+          "95495140-6b9a-474a-be72-1b0adde83dea": {
+            "id": "95495140-6b9a-474a-be72-1b0adde83dea",
+            "name": "Test01",
+            "functionId": "3411a75a-6e0d-4f8c-8bbc-6160cb56ae48",
+            "event": "{\n    \"key1\": \"value1\",\n    \"key2\": \"value2\",\n    \"key3\": \"value3\"\n}"
+          }
         }
       }
     },
@@ -60,7 +68,7 @@
     "projectRegion": "us-east-1",
     "platform": "AWS",
     "platformRegions": {},
-    "lastSave": 1551114808504
+    "lastSave": 1551115039796
   },
   "VCS_STATE": {
     "provider": "GitHub",
