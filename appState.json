@@ -8,7 +8,8 @@
         "type": "DIRECTORY",
         "isDirectory": true,
         "children": [
-          "3411a75a-6e0d-4f8c-8bbc-6160cb56ae48"
+          "3411a75a-6e0d-4f8c-8bbc-6160cb56ae48",
+          "22cb2569-10a4-4306-b4f3-e7b8a98b062d"
         ],
         "isRemovable": false,
         "filePath": "HelloWorld"
@@ -37,14 +38,32 @@
             "event": "{\n    \"key1\": \"value1\",\n    \"key2\": \"value2\",\n    \"key3\": \"value3\"\n}"
           }
         }
+      },
+      "22cb2569-10a4-4306-b4f3-e7b8a98b062d": {
+        "id": "22cb2569-10a4-4306-b4f3-e7b8a98b062d",
+        "parent": "56aed10a-03dd-47bb-8237-740dc1627eea",
+        "name": "receiveData.js",
+        "type": "LAMBDA_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "HelloWorld/receiveData.js",
+        "code": "exports.handler = function(event, context, callback) {\n    \n    console.log(\"mis datos son:\");\n    callback(null, {\"message\": \"Successfully executed\"});\n}",
+        "triggers": [],
+        "config": {
+          "runtime": "nodejs8.10",
+          "timeout": 60,
+          "memory": 128
+        }
       }
     },
     "deletedFiles": [],
     "rootNode": "56aed10a-03dd-47bb-8237-740dc1627eea",
     "openFiles": [
-      "3411a75a-6e0d-4f8c-8bbc-6160cb56ae48"
+      "3411a75a-6e0d-4f8c-8bbc-6160cb56ae48",
+      "22cb2569-10a4-4306-b4f3-e7b8a98b062d"
     ],
-    "currentFileId": "3411a75a-6e0d-4f8c-8bbc-6160cb56ae48",
+    "currentFileId": "22cb2569-10a4-4306-b4f3-e7b8a98b062d",
     "resources": {},
     "envVariables": [
       {
@@ -68,7 +87,7 @@
     "projectRegion": "us-east-1",
     "platform": "AWS",
     "platformRegions": {},
-    "lastSave": 1551115039796
+    "lastSave": 1551115196255
   },
   "VCS_STATE": {
     "provider": "GitHub",
